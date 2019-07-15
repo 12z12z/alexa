@@ -1,0 +1,104 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "particle",
+            "intents": [
+                {
+                    "name": "ParticleIntent",
+                    "slots": [
+                        {
+                            "name": "onoff",
+                            "type": "switchStatus"
+                        },
+                        {
+                            "name": "light",
+                            "type": "lightColor"
+                        },
+                        {
+                            "name": "sensor",
+                            "type": "tempStatus"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleIntent turn {onoff} {light} light",
+                        "ParticleIntent turn {onoff} {light} light",
+                        "ParticleIntent what is the {sensor} here"
+                    ]
+                },
+                {
+                    "name": "Lights",
+                    "slots": [
+                        {
+                            "name": "onoff",
+                            "type": "switchStatus"
+                        },
+                        {
+                            "name": "light",
+                            "type": "lightColor"
+                        },
+                        {
+                            "name": "sensor",
+                            "type": "tempStatus"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleIntent turn {onoff} {light} light",
+                        "ParticleIntent turn {onoff} {light} light",
+                        "ParticleIntent what is the {sensor} here"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "switchStatus",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "lightColor",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tempStatus",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "humidity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "temperature"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
